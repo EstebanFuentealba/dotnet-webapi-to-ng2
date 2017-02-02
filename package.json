@@ -1,0 +1,16 @@
+{
+  "name": "dotnet-webapi-to-ng2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node index.js"
+  },
+  "author": "Esteban Fuentealba",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "ejs": "^2.5.5",
+    "node-fetch": "^1.6.3"
+  }
+}

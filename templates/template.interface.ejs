@@ -1,0 +1,6 @@
+<% imports.forEach(function(param){%>import { <%= param.name %> } from './<%= param.name %>.interface';
+<% }); %>
+export interface <%= className;%> {
+    <% parameters.forEach(function(param){ %><%= param.name %>:<%= param.type %>;
+    <% }); %>
+}
