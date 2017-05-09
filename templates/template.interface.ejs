@@ -1,6 +1,6 @@
-<% imports.forEach(function(param){%>import { <%= param.name %> } from './<%= param.name %>.interface';
+<% imports.forEach(function(param){%>import { I<%= param.name %> } from './I<%= param.name %>';
 <% }); %>
-export interface <%= className;%> {
-    <% parameters.forEach(function(param){ %><%= param.name %>:<%= param.type %>;
+export interface I<%= className;%> {
+    <% parameters.forEach(function(param){ %><%= param.name %>:<%= ((param.isClass)?'I':'')+param.type %>;
     <% }); %>
 }
